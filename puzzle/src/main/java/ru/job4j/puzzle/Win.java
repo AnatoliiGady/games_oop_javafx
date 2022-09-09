@@ -34,6 +34,3 @@ public class Win {
         return result;
     }
 }
-
-
-    //public static boolean check(int[][] board, int row) написать после методов.
