@@ -6,7 +6,6 @@ import ru.job4j.chess.firuges.Cell;
 
 import javax.swing.text.Position;
 
-
 public class BishopBlackTest {
 
     @Test
