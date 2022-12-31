@@ -9,7 +9,8 @@ public class LogicTest {
 
     @Test
     public void whenNotFound() {
-        FigureNotFoundException thrown = Assertions.assertThrows(FigureNotFoundException.class, () -> {
+        FigureNotFoundException thrown =
+                Assertions.assertThrows(FigureNotFoundException.class, () -> {
             Logic test = new Logic();
             test.add(new BishopBlack(Cell.C1));
             test.move(Cell.A4, Cell.C8);
@@ -28,7 +29,8 @@ public class LogicTest {
 
     @Test
     public void whenImpossibleMove() {
-        ImpossibleMoveException thrown = Assertions.assertThrows(ImpossibleMoveException.class, () -> {
+        ImpossibleMoveException thrown =
+                Assertions.assertThrows(ImpossibleMoveException.class, () -> {
             Logic logic = new Logic();
             logic.add(new BishopBlack(Cell.C1));
             logic.move(Cell.C1, Cell.A1);
